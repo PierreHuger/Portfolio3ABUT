@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <span>PIERRE HUGER</span>
+
+      <nav class="header-nav">
+        <ul class="nav-links">
+          <li><a href="#Accueil">Accueil</a></li>
+          <li><a href="#Competences">Compétences</a></li>
+          <li><a href="#Projets">Projets</a></li>
+          <li><a href="#Contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <button class="burger-menu" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <!-- Bref présentation de moi -->
+      <section id="Accueil">
+        <div class="container">
+          <img src="./images/PhotoPro.png" alt="Pierre HUGER" />
+          <article class="text-container">
+            <h1>Je m'appelle Pierre HUGER</h1>
+            <p>
+              Je suis étudiant en troisième année de BUT Informatique à l’IUT de
+              Lannion et alternant chez le Crédit Agricole Technologies et
+              Services
+            </p>
+            <div class="trait"></div>
+            <a href="#Projets"><button>Projets</button></a>
+          </article>
+        </div>
+      </section>
+
+      <section id="Competences">
+        <div class="title-container">
+          <h2>Qui suis-je ?</h2>
+          <div class="trait"></div>
+        </div>
+
+        <div class="container">
+          <article>
+            <h3>A propos de moi</h3>
+            <p>
+              Je suis étudiant en BUT informatique dans un parcours orienté
+              developpement logiciels. Je suis également développeur Java en
+              alterance chez le Crédit Agricole Technologies et Services.
+            </p>
+            <p>
+              Ce poste d'alternant me permet de développer mes compétences tant
+              techniques que personnelles. Mes années d'études et d'alternance
+              m'ont permis d’acquérir une capacité de travail et de réflexion
+              importante.
+            </p>
+            <p>
+              Je suis une personne curieuse qui aime découvrir le monde qui nous
+              entoure. Le dépassement de soi et la motivation sont pour moi des
+              points essentiels dans la réussite. J’aime le contact humain et
+              apporter mon aide quand j’en ai la possibilité.
+            </p>
+
+            <a href="Documents/CV_Version_Physique.pdf" target="_blank">
+              <button>Mon CV</button>
+            </a>
+          </article>
+
+          <article>
+            <h3>Mes compétences</h3>
+            <div class="competences">
+              <div class="competence">Java</div>
+              <div class="competence">Maven</div>
+              <div class="competence">JUnit</div>
+              <div class="competence">HTML</div>
+              <div class="competence">CSS</div>
+              <div class="competence">PHP</div>
+              <div class="competence">Jenkins</div>
+              <div class="competence">Postman</div>
+              <div class="competence">Selenium</div>
+              <div class="competence">Github</div>
+              <div class="competence">Git</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="Projets">
+        <div class="title-container">
+          <h2>Mes Projets</h2>
+          <div class="trait"></div>
+        </div>
+        <div class="container">
+          <div>
+            <img src="./images/AlhaizBreizh.png" alt="Projet Alhaiz Breizh" />
+          </div>
+          <div class="projet-container">
+            <div class="text-container">
+              <h3>Alhaiz Breizh</h3>
+              <p>
+                Alhaiz Breizh est un projet fictif réalisé en deuxième année de
+                BUT Informatique. Le site permet aux utilisateurs de rechercher
+                des hébergements adaptés à leurs critères (localisation, type de
+                logement, budget, etc.). L'objectif principal du projet était
+                d'appliquer des technologies telles que HTML, CSS, PHP, et
+                JavaScript
+              </p>
+            </div>
+
+            <div class="button-github">
+              <a href="https://gitlab.com/matteo0810/alaizh-breizh"
+                ><button class="button">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                  <p class="text">Github</p>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="competences-container">
+          <h4>Compétences :</h4>
+          <div class="competence-flex">
+            <div class="competence-card">
+              <div class="front">
+                <p>Compétence 1</p>
+              </div>
+              <div class="back">
+                <p>Ce projet nous a amené à utiliser et à maitrîser git.</p>
+
+                <p>
+                  AC21.03 : Adopter de bonnes pratiques de conception et de
+                  programmation
+                </p>
+              </div>
+            </div>
+            <div class="competence-card">
+              <div class="front">
+                <p>Compétence 2</p>
+              </div>
+              <div class="back">
+                <p>
+                  Nous avons évalué l'impact de notre site et nous l'avons
+                  optimisé afin qu'il ne soit pas trop polluant.
+                </p>
+
+                <p>
+                  AC22.04 : Évaluer l’impact environnemental et sociétal des
+                  solutions proposées
+                </p>
+              </div>
+            </div>
+            <div class="competence-card">
+              <div class="front">
+                <p>Compétence 3</p>
+              </div>
+              <div class="back">
+                <p>
+                  Notre site web était hébergé sur un serveur de l'IUT. Pour
+                  faciliter l'utilisation du serveur, nous avons utilisé Docker.
+                </p>
+
+                <p>
+                  AC23.02 : Utiliser des serveurs et des services réseaux
+                  virtualisés
+                </p>
+              </div>
+            </div>
+            <div class="competence-card">
+              <div class="front">
+                <p>Compétence 4</p>
+              </div>
+              <div class="back">
+                <p>
+                  Nous avons utilisé MySQL pour gérer notre base de données. De
+                  plus, nous avons mis en place un hachage des données afin de
+                  les sécuriser.
+                </p>
+                <p>
+                  AC24.02 : Assurer la sécurité des données (intégrité et
+                  confidentialité)
+                </p>
+              </div>
+            </div>
+            <div class="competence-card">
+              <div class="front">
+                <p>Compétence 5</p>
+              </div>
+              <div class="back">
+                <p>
+                  Nous avons utilisé le gestionnaire de projet Jira pour un bon
+                  suivi tout au long du projet.
+                </p>
+                <p>
+                  AC25.04 : Définir et mettre en œuvre une démarche de suivi de
+                  projet
+                </p>
+              </div>
+            </div>
+            <div class="competence-card">
+              <div class="front">
+                <p>Compétence 6</p>
+              </div>
+              <div class="back">
+                <p>
+                  Nous étions 6 dans l'équipe, les tâches ont étés réparties
+                  équitablement en fonction des compétences de chacun.
+                </p>
+                <p>
+                  AC26.03 : Mobiliser les compétences interpersonnelles pour
+                  travailler dans une équipe informatique
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Contacts"></section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <span>PIERRE HUGER</span>
+        </div>
+        <div class="footer-links">
+          <a href="#Accueil">Accueil</a>
+          <a href="#Competences">Compétences</a>
+          <a href="#Projets">Projets</a>
+          <a href="#Contacts">Contacts</a>
+        </div>
+        <div class="footer-socials">
+          <a
+            href="https://github.com/PierreHuger"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/pierre-huger-5ab18926a/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2025 Pierre Huger. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
