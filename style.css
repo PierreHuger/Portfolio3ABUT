@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "comfortaa-bold";
   src: url(../fonts/comfortaa-bold.ttf);
 }
@@ -41,7 +41,7 @@
 @font-face {
   font-family: "poppins-semibold";
   src: url(../fonts/poppins-semibold.ttf);
-}
+} */
 
 body {
   font-family: "comfortaa-regular", sans-serif;
