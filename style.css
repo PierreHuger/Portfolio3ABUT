@@ -43,8 +43,15 @@
   src: url(../fonts/poppins-semibold.ttf);
 } */
 
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "comfortaa-regular", sans-serif;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400; /* Regular */
   color: black;
   position: relative;
   min-height: 100vh;
@@ -53,13 +60,15 @@ body {
 
 h1,
 h2 {
-  font-family: "poppins-semibold", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; /* Semibold */
 }
 
 h3,
 h4,
 button {
-  font-family: "poppins-medium", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* Medium */
 }
 
 h1 {
@@ -100,7 +109,8 @@ header {
 }
 
 header span {
-  font-family: "poppins-regular", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; /* Regular */
   font-size: 1.5em;
   color: #42a5f5;
 }
@@ -316,7 +326,8 @@ header span {
 }
 
 #Competences .competence {
-  font-family: "poppins-semibold", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; /* Semibold */
   padding: 0.6em 1.5em;
   margin-bottom: 1.5em;
   margin-right: 1.5em;
@@ -467,7 +478,8 @@ header span {
 }
 
 #Projets .competence-card .front {
-  font-family: "poppins-bold", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Bold */
   font-size: 1.1em;
   background-image: linear-gradient(to right, #085fb3 0%, #7dbbff 100%);
   color: white;
@@ -494,16 +506,15 @@ header span {
   display: flex;
   flex-direction: column;
   transform: rotateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  gap: 1em;
 }
 
 #Projets .competence-flex .competence-card:hover {
   transform: scale(1.1, 1.1);
   transition: transform 0.6s ease-in-out;
-}
-
-#Projets .competence-flex:hover > .competence-card:not(:hover) {
-  transform: scale(0.9, 0.9);
-  transition: transform 0.6s ease-in-out 0.1s; /* Délai léger pour rendre le retour plus progressif */
+  margin-right: 1em;
+  z-index: 2;
 }
 
 .trait {
@@ -706,5 +717,14 @@ footer {
 @media screen and (max-width: 430px) {
   #Projets .competence-card {
     width: 100%;
+  }
+
+  #Projets .competence-flex .competence-card:hover {
+    transform: scale(1, 1);
+    margin-bottom: 2em;
+  }
+
+  #Projets .competence-card .back {
+    padding: 1em 0.5em;
   }
 }
