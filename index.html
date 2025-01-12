@@ -277,4 +277,24 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const burger = document.querySelector(".burger-menu");
+      const nav = document.querySelector(".header-nav");
+
+      // Lorsque l'utilisateur clique sur le burger, on affiche/masque le menu
+      burger.addEventListener("click", (event) => {
+        event.stopPropagation(); // Empêche le clic de se propager au document
+        nav.classList.toggle("active");
+      });
+
+      // Lorsque l'utilisateur clique ailleurs, on ferme le menu si il est ouvert
+      document.addEventListener("click", (event) => {
+        if (!nav.contains(event.target) && !burger.contains(event.target)) {
+          nav.classList.remove("active");
+        }
+      });
+    });
+  </script>
 </html>
